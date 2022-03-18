@@ -41,7 +41,7 @@ El siguiente ejercicio tiene como objetivo mostrar la forma en la que podemos es
 7. Se establece la primera ruta que tendra el servidor y que se encontrara en el nodo raiz
 
 8. Ahora en el res.send se colocara las entiquetas de html, head, body y h1 pero dentro de h1 debera tener Hello World!
-   ("<html><head></head><body><h1>Hello World!</h1></body></html>")
+   ![html](img/html code.jpg)
 
 9. Se levanta el servidor y lo pone a escuchar
 
@@ -56,15 +56,14 @@ El siguiente ejercicio tiene como objetivo mostrar la forma en la que podemos es
 14. Se establece la Tercera ruta que tendra el servidor y que se encontrara en el directorio person (esto se colocara antes de la linea con la que se lenvanta el servidor), esta ruta recibira un parametro por lo que se le coloca /:id despues de colocar el directorio person
 
 15. La manera en la que se utiliza el parametro recibido es de la siguiente manera:
-    res.send(
-    "<html><head></head><body><h1>Person: " +
-    req.params.id +
-    "</h1></body></html>"
-    );
+    ![res.send](img/res,send.jpg)
 
-- En la primera linea ("<html><head></head><body><h1>Person: ") se especifica la parte inicial del html ademas del inicio del texto que se imprimira
-- Despues se le une (+ req.params.id +) el parametro que se recibe
-- El la tercera fila ("</h1></body></html>") se cierra el html
+- En la primera linea se especifica la parte inicial del html ademas del inicio del texto que se imprimira
+  ![res.send](img/html p1.jpg)
+- Despues se le une el parametro que se recibe
+  ![res.send](img/html p2.jpg)
+- El la tercera fila se cierra el html
+  ![res.send](img/html p3.jpg)
 
 ## RECURSOS
 
