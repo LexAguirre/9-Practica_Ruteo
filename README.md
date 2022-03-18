@@ -41,7 +41,7 @@ El siguiente ejercicio tiene como objetivo mostrar la forma en la que podemos es
 7. Se establece la primera ruta que tendra el servidor y que se encontrara en el nodo raiz
 
 8. Ahora en el res.send se colocara las entiquetas de html, head, body y h1 pero dentro de h1 debera tener Hello World!
-   ![html](img/html code.jpg)
+   ![html](img/html_code.jpg)
 
 9. Se levanta el servidor y lo pone a escuchar
 
@@ -59,11 +59,11 @@ El siguiente ejercicio tiene como objetivo mostrar la forma en la que podemos es
     ![res.send](img/res,send.jpg)
 
 - En la primera linea se especifica la parte inicial del html ademas del inicio del texto que se imprimira
-  ![res.send](img/html p1.jpg)
+  ![res.send](img/html_p1.jpg)
 - Despues se le une el parametro que se recibe
-  ![res.send](img/html p2.jpg)
+  ![res.send](img/html_p2.jpg)
 - El la tercera fila se cierra el html
-  ![res.send](img/html p3.jpg)
+  ![res.send](img/html_p3.jpg)
 
 ## RECURSOS
 
