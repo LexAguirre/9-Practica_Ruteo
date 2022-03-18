@@ -16,6 +16,7 @@
 - Nodemon server
 - Express module
 - Objetos
+- Parametros
 
 > ENTREGA: JUEVES 24 DE MARZO DEL 2022
 
