@@ -15,6 +15,7 @@
 
 - Nodemon server
 - Express module
+- Objetos
 
 > ENTREGA: JUEVES 24 DE MARZO DEL 2022
 
@@ -34,21 +35,35 @@ El siguiente ejercicio tiene como objetivo mostrar la forma en la que podemos es
 
 5. Escribe el codigo donde se requiera express y donde una app lo mande a llamar
 
-6. Ahora se realizara un route handler al iniciar el servidor y con un respond se imprimira el texto "Hello World, this is the root route"
+6. Setteamos el puerto para que escuche el servidor y para que se encuentre en el nodo 3000
 
-7. El servidorse localizara en el puerto 3000
+7. Se establece la primera ruta que tendra el servidor y que se encontrara en el nodo raiz
 
-8. Ahora se realizara un route handler hacia la direción "uno" y con un respond se imprimira el texto "Hello World, frome route One"
+8. Ahora en el res.send se colocara las entiquetas de html, head, body y h1 pero dentro de h1 debera tener Hello World!
+   ("<html><head></head><body><h1>Hello World!</h1></body></html>")
 
-9. Ahora en la linea instala 'npm install -g nodemon' y escribe "nodemon server"
+9. Se levanta el servidor y lo pone a escuchar
 
-10. Abre una nueva ventana en el navegador y escribe localhost:3000
+10. Ahora se ejecuta el comando “npx nodemon” en la terminal
 
-11. Agrega un nuevo route handler propio y ademas otro que tenga la direccion "prueba" y que responda imprimiendo "Hello World, frome route Prueba"
+11. Abre una nueva ventana en el navegador y escribe localhost:3000 para poder observar el Hello World!
 
-12. Ahora la ruta prueba debera regresar un texto html
+12. Se establece la Segunda ruta que tendra el servidor y que se encontrara en el directorio api (esto se colocara antes de la linea con la que se lenvanta el servidor), lo que regresara esta ruta es un objeto con el nombre y apellido
 
-13. Se crea un archivo .gitignore conteniendo node_modules para evitar empujar la carpeta node_modules en github
+13. Ahora en el navegador, en el directorio api se podra observar el objeto creado en la segunda ruta
+
+14. Se establece la Tercera ruta que tendra el servidor y que se encontrara en el directorio person (esto se colocara antes de la linea con la que se lenvanta el servidor), esta ruta recibira un parametro por lo que se le coloca /:id despues de colocar el directorio person
+
+15. La manera en la que se utiliza el parametro recibido es de la siguiente manera:
+    res.send(
+    "<html><head></head><body><h1>Person: " +
+    req.params.id +
+    "</h1></body></html>"
+    );
+
+- En la primera linea ("<html><head></head><body><h1>Person: ") se especifica la parte inicial del html ademas del inicio del texto que se imprimira
+- Despues se le une (+ req.params.id +) el parametro que se recibe
+- El la tercera fila ("</h1></body></html>") se cierra el html
 
 ## RECURSOS
 

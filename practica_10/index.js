@@ -1,7 +1,7 @@
 const express = require("express"); // importamos la dependencia
 const app = express(); //declaramos una app de express
 
-var port = process.env.PORT || 3000; //Setteamosel puerto para que escuche el servidor
+var port = process.env.PORT || 3000; //Setteamos el puerto para que escuche el servidor
 
 //Primera ruta (esta a nivel de raiz /), Hello World!
 app.get("/", function (req, res) {
